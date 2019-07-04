@@ -13,3 +13,4 @@ Built to begin to familiarise myself with the Android Studio software.
 
 # Screenshot
 [![Image from Gyazo](https://i.gyazo.com/68385eec0c9126ddc3669ad2bc32013d.png)](https://gyazo.com/68385eec0c9126ddc3669ad2bc32013d)
+[![Image from Gyazo](https://i.gyazo.com/dfcd70f613e7255ef3161b0751c68b9a.png)](https://gyazo.com/dfcd70f613e7255ef3161b0751c68b9a)
