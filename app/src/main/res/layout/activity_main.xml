@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginRight="160dp"
+        android:gravity="center_horizontal"
+        android:text="Let's play Rock, Paper Scissors"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textPrompt"
+        android:layout_width="175dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="100dp"
+        android:gravity="center_horizontal"
+        android:text="Please choose a button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTitle" />
+
+    <Button
+        android:id="@+id/buttonRock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginRight="140dp"
+        android:text="Rock"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textPrompt" />
+
+    <Button
+        android:id="@+id/buttonPaper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginRight="140dp"
+        android:text="Paper"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonRock" />
+
+    <Button
+        android:id="@+id/buttonScissors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginRight="140dp"
+        android:text="Scissors"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPaper" />
+
+    <TextView
+        android:id="@+id/textYourChoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="280dp"
+        android:text="Your Choice"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTitle" />
+
+    <TextView
+        android:id="@+id/textOppChoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="280dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:text="Opponent Choice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTitle" />
+
+    <TextView
+        android:id="@+id/textYouOutput"
+        android:layout_width="75dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="-"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textYourChoice" />
+
+    <TextView
+        android:id="@+id/textOppOutput"
+        android:layout_width="75dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:gravity="center_horizontal"
+        android:text="-"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textOppChoice" />
+
+    <TextView
+        android:id="@+id/textWinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="100dp"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonScissors" />
+
+    <TextView
+        android:id="@+id/textYouWins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal"
+        android:text="0"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textYouOutput" />
+
+    <TextView
+        android:id="@+id/textOppWins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="90dp"
+        android:layout_marginRight="90dp"
+        android:gravity="center_horizontal"
+        android:text="0"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textOppOutput" />
+
+    <Button
+        android:id="@+id/buttonReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="57dp"
+        android:layout_marginLeft="57dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:text="Reset"
+        app:layout_constraintEnd_toStartOf="@+id/textOppWins"
+        app:layout_constraintStart_toEndOf="@+id/textYouWins"
+        app:layout_constraintTop_toBottomOf="@+id/textWinner" />
+
+</android.support.constraint.ConstraintLayout>
