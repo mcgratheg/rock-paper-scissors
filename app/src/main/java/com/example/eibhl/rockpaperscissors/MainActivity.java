@@ -17,11 +17,15 @@ public class MainActivity extends AppCompatActivity {
     private TextView textWinner;
     private TextView textYouWins;
     private TextView textOppWins;
-    private int opponentChoice;
-    private int yourChoice;
-    private int yourWins = 0;
-    private int opponentWins = 0;
+    private int opponentChoice; // opponent's choice as an int
+    private int yourChoice;     // user's choice as an int
+    private int yourWins = 0;   // number of games user has won
+    private int opponentWins = 0;   // number of games opponent has won
 
+    /**
+    *   Method that sets up random number between 1 and 3 and assigns to opponentChoice
+    *   Opponent Output label text is replaced with choice corresponding to number
+    **/
     public void newGame() {
         opponentChoice = (int) (Math.random()*3 + 1);
         String choice = "";
@@ -37,6 +41,12 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /**
+    *   Method compares opponentChoice to yourChoice and determines winner according to rules of Rock, Paper, Scissors
+    *   If both choices are the same, the game ends in a tie
+    *   Increases winner's total win count by one
+    *   Sets text of winner label according to winner
+    **/
     public void playGame() {
         String winner = "";
 
@@ -103,6 +113,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        /**
+        *   Resets text labels and returns total win counts to 0
+        *
+        **/
         buttonReset.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
